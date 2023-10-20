@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <meta charset="utf-8" />
+        <style>
+            body{ color: red; }
+            #div1{ color: blue; }
+            #div2{ color: #41c0bc;}
+            #div3{ color: rgb(100,0,50); }
+            /* css의 주석*/
+        </style>
+        <!-- html의 주석 -->
+    </head>
+    <body>
+        <div> <div id="div1">상속과 겹침</div>
+
+<!-- 테스트라네~! -->
+        <style type="text/css">
+            .cascade {color:green;}
+            #specifi {color:blue;}
+        </style>
+        <div class="cascade"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi" style="color:red;"> 단계적으로 적용되는 스타일 </div>
+<!-- 테스트라네~! -->
+        <style>
+            div{
+                background-color: lightblue;
+                border: solid 1px red;
+            }
+            #w1{
+                width: 200px;
+                height: 150px;
+                background-color: lightblue;
+            }
+        </style>
+        <div>default</div>
+        <div id="w1">width</div>
+
+        <style>
+            #p1{
+                padding: 20px;
+            }
+        </style>
+        <div id="p1">padding</div>
+
+        <style>
+            #m1{
+                margin: 20px;
+            }
+        </style>
+        <div id="m1">margin</div>
+
+        <stlye>
+            *{ text-decoration: underline; }
+            strong{ /*elemnt selector 요소 선택자 */
+                color: green;
+            }
+            em{
+                color: pink;
+            }
+        </stlye>
+        <strong>strong</strong>
+        <em>em</em>
+
+        <style>
+            .c1{
+                color: violet;
+            }
+            #d1{
+                color: aquamarine;
+            }
+        </style>
+        <div class="c1">class selector</div>
+        <div id="d1">id selector</div>
+
+    </body>
+</html>
