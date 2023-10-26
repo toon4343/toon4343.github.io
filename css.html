@@ -13,7 +13,7 @@
         <!-- html의 주석 -->
     </head>
     <body>
-        <div> <div id="div1">상속과 겹침</div>
+        <div id="div1">상속과 겹침</div>
 
 <!-- 테스트라네~! -->
         <style type="text/css">
@@ -52,7 +52,7 @@
         </style>
         <div id="m1">margin</div>
 
-        <stlye>
+        <style>
             *{ text-decoration: underline; }
             strong{ /*elemnt selector 요소 선택자 */
                 color: green;
@@ -60,7 +60,7 @@
             em{
                 color: pink;
             }
-        </stlye>
+        </style>
         <strong>strong</strong>
         <em>em</em>
 
@@ -75,5 +75,21 @@
         <div class="c1">class selector</div>
         <div id="d1">id selector</div>
 
+        <style>
+            #f1::first-line{
+                color: blue;
+            }
+            #f1::first-letter{
+                font-size: 40px;
+            }
+            #f1::before{ content:"시작";}
+            #f1::after{ content:"끝";}
+        </style>
+        <div id="f1">
+            first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letter
+            first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letter
+            first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letter
+            first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letter
+        </div>
     </body>
 </html>
