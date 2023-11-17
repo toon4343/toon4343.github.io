@@ -6,6 +6,11 @@
         <style>
             #wrap ul{}
             #wrap>header>ul{}
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
             header ul{
                 list-style: none;
                 display: flex;
@@ -21,6 +26,7 @@
             header{
                 display: flex;
                 justify-content: space-between;
+                padding: 5px 50px;
             }
             header h1{
                 margin: 0px;
@@ -47,6 +53,7 @@
                 display: flex;
                 justify-content: space-between;
                 background-color: lightgray;
+                padding: 5px 50px;
             }
             nav h2{
                 margin: 9px 0px;
@@ -75,7 +82,28 @@
                 font-weight: normal;
             }
             section{
-                padding: 50px 0px;
+                padding: 50px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer ul li{
+                padding: 0px 5px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px lightgray;
+            }
+            footer div:first-child li:last-child{
+                border: none;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: #333;
+                color: white;
+                padding: 50px;
             }
         </style>
     </head>
@@ -195,7 +223,12 @@
                 </div>
                 <div>
                     <ul>
-                        <li><img src=""/></li>
+                        <li><img src="icon1.png"/></li>
+                        <li><img src="icon2.png"/></li>
+                        <li><img src="icon3.png"/></li>
+                        <li><img src="icon4.png"/></li>
+                        <li><img src="icon5.png"/></li>
+                        <li><img src="icon6.png"/></li>
                     </ul>
                 </div>
             </footer>
