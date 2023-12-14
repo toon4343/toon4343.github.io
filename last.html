@@ -57,6 +57,7 @@
             section{
                 text-align: center;
                 color: gray;
+                margin: 20px 20px;
             }
             #main_visual p{
                 color: white;
@@ -108,6 +109,27 @@
             #content2 img{
                 width: 100%;
                 display: block;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer ul li{
+                padding: 0px 5px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px lightgray;
+            }
+            footer div:first-child li:last-child{
+                border: none;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: gray;
+                color: white;
+                padding: 50px;
             }
         </style>
     </head>
@@ -238,6 +260,20 @@
                         <li><img src="last/img21.png" /></li>
                     </ul>
                 </section>
+                <footer>
+                    <div>
+                        <ul>
+                            <li>home</li>
+                            <li>about</li>
+                            <li>services</li>
+                            <li>work</li>
+                            <li>blog</li>
+                            <li>contact us</li>
+                        </ul>
+                        <p>copyright</p>
+                        <p>discription</p>
+                    </div>
+                </footer>
             </div>
     </body>
 </html>
